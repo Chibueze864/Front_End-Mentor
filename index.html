@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="app">
+      <div class="menu">
+        <div class="menu-links">
+          <img src="./images/logo.svg" />
+          <div id="logo-space"></div>
+          <p >
+            <span class="dropbtn" onclick="myFunction()">Features
+            <img class="drop-down-icon " src="./images/icon-arrow-down.svg" />
+          </span>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#"><img src="./images/icon-todo.svg"> &nbsp; To Do List</a>
+            <a href="#"><img src="./images/icon-calendar.svg"> &nbsp;Calendar</a>
+            <a href="#"><img src="./images/icon-reminders.svg"> &nbsp;Reminders</a>
+            <a href="#"><img src="./images/icon-planning.svg"> &nbsp;Planning</a>
+          </div>
+          </p>
+          &nbsp;
+          <p >
+            <span class="dropbtnTwo" onclick="myFunctionTwo()">Company
+            <img class="drop-down-icon " src="./images/icon-arrow-down.svg" />
+          </span>
+          <div class="dropdown-contentTwo" id="myDropdownTwo">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+          </p>
+          &nbsp;
+          <p>Careers</p>
+          &nbsp;
+          <p>About</p>
+          &nbsp;
+        </div>
+        <div class="register">
+          <p>Login</p>
+          <span id="register">Register</span>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu-logo">
+          <img src="./images/logo.svg" />
+        </div>
+        <div class="hamburger-menu">
+        
+        <input id="toggle" type="checkbox"></input>
+
+        <label for="toggle" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+        
+        <div class="nav">
+          <div class="nav-wrapper">
+            <nav>
+              <p href="#">
+                <span class="dropbtnThree" onclick="myFunctionThree()">
+                  Features
+                <img class="drop-down-icon" src="./images/icon-arrow-down.svg" />
+                </span>
+                <div class="dropdown-contentThree" id="myDropdownThree">
+                  <a href="#"> <img src="./images/icon-todo.svg"> &nbsp; To Do List</a>
+                  <a href="#"><img src="./images/icon-calendar.svg"> &nbsp;Calendar</a>
+                  <a href="#"><img src="./images/icon-reminders.svg"> &nbsp;Reminders</a>
+                  <a href="#"><img src="./images/icon-planning.svg"> &nbsp;Planning</a>
+                </div>
+
+              </p><br>
+              <p href="#">
+                <span class="dropbtnFour" onclick="myFunctionFour()">
+                  Company
+                <img class="drop-down-icon" src="./images/icon-arrow-down.svg" />
+                </span>
+
+                <div class="dropdown-contentFour" id="myDropdownFour">
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
+
+              </p><br>
+              <p href="#">Careers</p><br>
+              <p href="#">About</p><br>
+              <div class="register-mobile">
+                <p>Login</p><br><br>
+              <span id="register">Register</span>
+              </div>
+              
+            </nav>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Make</h1>
+          <h1 id="remote">remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button id="learn">Learn more</button>
+          <div class="clients">
+            <img src="./images/client-audiophile.svg" />
+            <img src="./images/client-databiz.svg" />
+            <img src="./images/client-maker.svg" />
+            <img src="./images/client-meet.svg" />
+          </div>
+        </div>
+        <div class="hero-content-mobile">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button id="learn">Learn more</button>
+          <div class="clients">
+            <img src="./images/client-audiophile.svg" />
+            <img src="./images/client-databiz.svg" />
+            <img src="./images/client-maker.svg" />
+            <img src="./images/client-meet.svg" />
+          </div>
+        </div>
+        <div class="hero-image">
+          <img id="hero-image" src="./images/image-hero-desktop.png" />
+          <span id="hero-image-mobile">
+            <img  src="./images/image-hero-mobile.png"/>
+
+          </span>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Chibueze Onyekpere</a>.
+      </div>
+    </div>
+  </body>
+</html>
